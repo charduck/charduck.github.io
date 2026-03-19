@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        :root {
+            --bg-red: rgb(255, 87, 87);
+            --nav-red: rgb(255, 60, 60);
+            --hover-pink: #ffa8a8;
+        }
+
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--bg-red);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--nav-red);
+            padding: 1rem 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li { margin-right: 20px; }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a:hover { color: var(--hover-pink); }
+
+        .error-wrapper {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .error-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .spinner-container {
+            width: 180px;
+            margin: 0 auto 1.5rem auto;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .shield {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background: transparent;
+        }
+
+        h1 { font-size: 3rem; margin: 10px 0; }
+        p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; }
+
+        .btn-back {
+            display: inline-block;
+            background: white;
+            color: var(--bg-red);
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn-back:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                    <img src="assets/miku.webp" alt="miku" style="width: 30px; height: 30px; margin-right: 6px;">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/neru.webp" alt="neru" style="width: 30px; height: 30px; margin-right: 6px;">
+                    About
+                </a>
+            </li>
+        </ul>
+        <div class="icon">
+            <img src="assets/teto.webp" alt="icon" width="40">
+        </div>
+    </nav>
+
+    <div class="error-wrapper">
+        <div class="error-card">
+            <div class="spinner-container">
+                <div class="shield"></div>
+                
+                <div class="tenor-gif-embed" data-postid="14429750904377087497" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+                    <a href="https://tenor.com/view/miku-teto-neru-spin-plush-gif-14429750904377087497">Miku Teto Sticker</a>
+                </div>
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+
+            <h1>404</h1>
+            <p>Oops! We couldn't find that page.</p>
+            <a href="index.html" class="btn-back">Return Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
